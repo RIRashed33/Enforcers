@@ -1,0 +1,111 @@
+@media screen and (max-width: 1199px){
+    .large-textbox {
+        padding: 25px 45px;
+    }
+    .large-textbox > span {
+        font-size: 80px;
+    }
+    .large-textbox img {
+        max-width: 60px;
+    }
+
+}
+@media screen and (max-width: 767px){
+    p.large{
+        font-size: 18px;
+     }
+    /* Header Style */
+    a.logo {
+        max-width: 130px;
+        position: relative;
+        z-index: 9;
+    }
+    button.menu-toggler-icon {
+        width: 35px;
+        background: transparent;
+        height: 28px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3px 0;
+        position: relative;
+        z-index: 9;
+        border: none;
+    }
+    button.menu-toggler-icon span {
+        width: 100%;
+        display: block;
+        height: 3px;
+        background-color: var(--semi-white);
+        border-radius: 2px;
+        transition: all 0.4s;
+        position: relative;
+    }
+    body.show-menu button.menu-toggler-icon span:first-child{
+        transform: rotate(48deg);
+        top: 9px;
+    }
+    body.show-menu button.menu-toggler-icon span:nth-child(2){
+        opacity: 0;
+    }
+    body.show-menu button.menu-toggler-icon span:last-child{
+        transform: rotate(-48deg);
+        bottom: 10px;
+    }
+    nav.nav-menu {
+        position: absolute;
+        top: 0;
+        left: calc(-100% - 1px);
+        background-color: var(--maroon);
+        padding: 90px 12px 32px;
+        width: 100%;
+        transition: all 0.4s;
+    }
+    body.show-menu nav.nav-menu{
+        left: 0;
+    }
+    nav.nav-menu ul li {
+        text-align: end;
+    }
+    nav.nav-menu ul li:not(li:last-child) {
+        margin-bottom: 12px;
+    }
+    /* Footer Style */
+    .large-textbox {
+        flex-direction: column;
+        padding: 25px 30px;
+    }
+    .large-textbox span {
+        margin-bottom: 16px;
+        font-size: 65px;
+    }
+    .large-textbox p.large {
+        margin-bottom: 45px;
+    }
+    p.getintouch-anchor {
+        margin-bottom: 24px;
+        font-size: 16px;
+    }
+    p.getintouch-anchor a img {
+        max-width: 16px;
+        margin-right: 8px
+    }
+
+}
+@media screen and (min-width: 768px){
+     /* Header Style */
+    nav.nav-menu ul li {
+        display: inline-block;
+    }
+    nav.nav-menu ul li a:hover {
+        color: var(--maroon);
+    }
+     nav.nav-menu ul li:not(li:last-child) {
+        margin-right: 25px;
+    }
+    /* Footer Style */
+    p.getintouch-anchor {
+        margin-bottom: 28px;
+    }
+
+}
