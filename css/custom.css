@@ -7,6 +7,7 @@
     --maroon: #7D0B0B;
     --conic-gradient: conic-gradient(from 135deg at 49.73% 50%, #7D0B0B 0deg, #540707 360deg);
     --dark-inner-gradient: linear-gradient(142deg, #111010 0%, #1F1D1D 64.92%);
+    --mix-gradient: var(--Mix-Gradient, linear-gradient(to bottom right, #350606 0%, #3E0B0B 9%, #150D0D 26%, #0C0404 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #350606 0%, #3E0B0B 9%, #150D0D 26%, #0C0404 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #350606 0%, #3E0B0B 9%, #150D0D 26%, #0C0404 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #350606 0%, #3E0B0B 9%, #150D0D 26%, #0C0404 50%) top right / 50% 50% no-repeat);
 }
 body{
     background-color: var(--smoky-black);
@@ -47,6 +48,11 @@ body{
     font-size: 32px;
     line-height: 1.37;
  }
+ h4{
+   font-size: 24px;
+   line-height: 1.17;
+   font-weight: 600;
+ }
  p.large, p.small{
     font-size: 23px;
     line-height: 1.22;
@@ -79,6 +85,14 @@ a.transparent-btn {
 a.gradient-btn {
    background: var(--conic-gradient);
    padding: 12px 24px;
+}
+a.right-arrow-btn {
+   padding: 4px 36px 4px 4px;
+   background: url(../img/icon/arrow-right-small.svg) no-repeat right 4px center;
+   color: var(--semi-white);
+}
+a.right-arrow-btn:hover{
+   background-position: right center;
 }
  
  /* Header Style */
@@ -135,3 +149,71 @@ nav.footer-navmenu ul li:not(li:last-child) {
    margin-bottom: 8px;
 }
 
+/* Main Area Style */
+span.large-text{
+   font-size: 64px;
+   font-weight: 600;
+   line-height: 1.27;
+   display: block;
+}
+section.main-hero-section {
+   padding: 60px 0;
+}
+.banner-btns {
+   margin-bottom: 60px;
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+.main-hero-details {
+   background: var(--mix-gradient);
+   background-size: 100%;
+   background-position: top left;
+   border-radius: 4px;
+   padding: 0 80px 0 40px;
+}
+.event-schedule-box {
+   padding: 40px;
+   display: flex;
+   align-items: center;
+   border: 2px solid #2D2D2D;
+   border-radius: 2px;
+   height: 100%;
+   max-width: 370px;
+   background: var(--dark-inner-gradient);
+   position: relative;
+}
+span.calender-icon {
+   padding: 8px;
+   background-color: var(--smoky-black);
+   border-radius: 50%;
+   width: 56px;
+   height: 56px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 12px;
+}
+a.event-schedule-anchor {
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   background-color: var(--maroon);
+   border-radius: 2px;
+   background-image: url(../img/icon/arrow-right-small.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   padding: 8px;
+   right: -35px;
+   top: calc(50% - 20px);
+}
+a.event-schedule-anchor:hover{
+   background-position: right 8px center;
+}
+section.team-section {
+   padding: 60px 0;
+}
+.team-content {
+   max-width: 990px;
+   margin-bottom: 60px;
+}

@@ -1,4 +1,10 @@
 @media screen and (max-width: 1199px){
+    h1,span.large-text{
+        font-size: 48px;
+    }
+    p.large, h4{
+        font-size: 20px;
+    }
     .large-textbox {
         padding: 25px 45px;
     }
@@ -8,12 +14,15 @@
     .large-textbox img {
         max-width: 60px;
     }
+    .main-hero-details {
+        padding: 40px 60px 40px 24px;
+    }
 
 }
-@media screen and (max-width: 767px){
-    p.large{
-        font-size: 18px;
-     }
+@media screen and (max-width: 991px){
+    .container {
+        max-width: 640px;
+    }
     /* Header Style */
     a.logo {
         max-width: 130px;
@@ -54,21 +63,37 @@
     }
     nav.nav-menu {
         position: absolute;
+        left: 0;
         top: 0;
-        left: calc(-100% - 1px);
         background-color: var(--maroon);
-        padding: 90px 12px 32px;
         width: 100%;
         transition: all 0.4s;
     }
-    body.show-menu nav.nav-menu{
-        left: 0;
+    nav.nav-menu ul {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 90px 12px 32px;
     }
     nav.nav-menu ul li {
-        text-align: end;
+        text-align: center;
     }
     nav.nav-menu ul li:not(li:last-child) {
         margin-bottom: 12px;
+    }
+
+    /* Main Area Style */
+    .banner-btns {
+        justify-content: center;
+    }
+    .main-hero-details {
+        padding: 40px 24px;
+    }
+
+}
+@media screen and (max-width: 767px){
+    a.transparent-btn, a.gradient-btn{
+        min-width: 210px;
+        justify-content: center;
     }
     /* Footer Style */
     .large-textbox {
@@ -91,8 +116,37 @@
         margin-right: 8px
     }
 
+    /* Main Area Style */
+    h1{
+        font-size: 40px;
+    }
+    .banner-btns {
+        flex-direction: column;
+    }
+    .event-schedule-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        padding: 24px;
+    }
+    .hero-details-img img {
+        max-width: 220px;
+    }
+    span.calender-icon {
+        margin-right: 0px;
+    }
+    a.event-schedule-anchor {
+        position: inherit;
+        right: inherit;
+    }
+
 }
-@media screen and (min-width: 768px){
+@media screen and (max-width: 500px){
+
+
+}
+@media screen and (min-width: 991px){
      /* Header Style */
     nav.nav-menu ul li {
         display: inline-block;
@@ -109,3 +163,10 @@
     }
 
 }
+@media screen and (min-width: 1200px){
+    .hero-details-img {
+        margin-top: -24px;
+    }
+
+}
+

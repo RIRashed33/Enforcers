@@ -18,31 +18,33 @@
     <header class="header-area py-3">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md-auto">
+                <div class="col-lg-auto">
                     <div class="responsive-header d-flex align-items-center justify-content-between">
                         <a href="#" class="logo">
                             <img src="./img/logo.png" alt="">
                         </a>
-                        <button onclick="navmenu_toggle()" class="menu-toggler-icon d-md-none">
+                        <button onclick="navmenu_toggle()" data-bs-target="#main_navmenu" data-bs-toggle="collapse" class="menu-toggler-icon d-lg-none">
                             <span></span>
                             <span></span>
                             <span></span>
                         </button>
                     </div>
                 </div>
-                <nav class="col-md-auto nav-menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Charities</a></li>
-                        <li><a href="#">Partnership</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="col-lg-auto navbar-expand-lg">
+                    <nav class="nav-menu collapse navbar-collapse" id="main_navmenu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Charities</a></li>
+                            <li><a href="#">Partnership</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="col-md-auto d-none d-lg-block">
                     <div class="navmenu-extra-content">
-                        <a href="#" class="transparent-btn me-3"><img src="./img/icon/shopping-cart.png" alt="shop_cart_icon">Shop</a>
-                        <a href="#" class="gradient-btn"><img src="./img/icon/hand-holding-heart.png" alt="heart_icon">Donate</a>
+                        <a href="#" class="transparent-btn me-3"><img src="./img/icon/shopping-cart.svg" alt="shop_cart_icon">Shop</a>
+                        <a href="#" class="gradient-btn"><img src="./img/icon/hand-holding-heart.svg" alt="heart_icon">Donate</a>
                     </div>
                 </div>
             </div>
@@ -53,15 +55,15 @@
         <section class="main-hero-section">
             <div class="container">
                 <div class="main-hero-content">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1>Supporting Our Community, One Play at a Time</h1>
-                            <div class="banner-btns d-flex">
-                                <a href="#" class="gradient-btn me-3"><img src="./img/icon/hand-holding-heart.png" alt="heart_icon">Donate</a>
+                    <div class="row align-items-center text-center text-lg-start">
+                        <div class="col-lg-6">
+                            <h1 class="mb-4 pb-3">Supporting <br>Our Community, <br>One Play at a Time</h1>
+                            <div class="banner-btns">
+                                <a href="#" class="gradient-btn"><img src="./img/icon/hand-holding-heart.svg" alt="heart_icon">Donate</a>
                                 <a href="#" class="transparent-btn">Become a Sponsor</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="banner-img">
                                 <img src="./img/hero-img.png" alt="">
                             </div>
@@ -69,31 +71,31 @@
                     </div>
 
                     <div class="main-hero-details">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="hero-details-img">
+                        <div class="row align-items-center gx-3 gy-5 gy-lg-0">
+                            <div class="col-lg-3">
+                                <div class="hero-details-img text-center text-lg-start">
                                     <img src="./img/helmet.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center">
-                                    <img src="./img/cup-small.jpg" alt="">
-                                    <div class="champ-info">
+                            <div class="col-lg">
+                                <div class="d-flex align-items-center justify-content-center flex-column flex-md-row">
+                                    <img class="mb-4 mb-md-0 me-md-3 me-xxl-4" src="./img/cup-small.jpg" alt="">
+                                    <div class="champ-info text-center text-md-start">
                                         <p class="large text-uppercase">NPSFL CHAMPIONS</p>
-                                        <span>2023</span>
-                                        <p>Know more About us <img src="./img/icon/arrow-right-small.png" alt=""></p>
+                                        <span class="large-text">2023</span>
+                                        <a href="#" class="right-arrow-btn">Know more About us</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="d-flex align-items-center position-relative">
-                                    <span class="calender-icon"><img src="./img/icon/calender.png" alt=""></span>
+                            <div class="col-lg">
+                                <div class="event-schedule-box mx-auto">
+                                    <span class="calender-icon me-xxl-4"><img src="./img/icon/calender.svg" alt=""></span>
                                     <div class="schedule-info">
-                                        <p class="small">Home | Lawmen</p>
-                                        <p class="large fw-bold">March 16</p>
+                                        <p class="small mb-1">Home | Lawmen</p>
+                                        <h4 class="mb-1">March 16</h4>
                                         <p>Click to see  2024 Schedule</p>
                                     </div>
-                                    <a href="#" class="schedule-anchor"></a>
+                                    <a href="#" class="event-schedule-anchor"></a>
                                 </div>
                             </div>
                         </div>
@@ -106,16 +108,18 @@
         
         <section class="team-section">
             <div class="container">
-                <p class="large text-uppercase">WHO WE ARE?</p>
-                <h2>“What I always felt made us special, is we are a family on and off the field. The way we come together to help each other out makes me proud to be an Enforcers”</h2>
-                <p class="large">“What I always felt made us special, is we are a family on and off the field. The way we come together to help each other out makes me proud to be an Enforcers”</p>
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="team-content">
+                    <p class="large text-uppercase mb-3">WHO WE ARE?</p>
+                    <h2 class="mb-3">“What I always felt made us special, is we are a family on and off the field. The way we come together to help each other out makes me proud to be an Enforcers”</h2>
+                    <p class="large">Shane Lynn - Former Player, Coach and Current President</p>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-6 col-lg-5">
                         <div class="team-banner">
                             <img src="./img/team-banner.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-lg-5">
                         <div class="team-right-content">
                             <p class="large text-uppercase">OUR THREE PILLARS</p>
                             <h3>Charity, Family and Winning Football Games.</h3>
@@ -190,7 +194,7 @@
 
                 </div>
                 <div class="charity-btns">
-                    <a href="#" class="gradient-btn"><img src="./img/icon/hand-holding-heart.png" alt="heart_icon">Donate</a>
+                    <a href="#" class="gradient-btn"><img src="./img/icon/hand-holding-heart.svg" alt="heart_icon">Donate</a>
                     <a href="#" class="transparent-btn">More about Charities</a>
                 </div>
 
@@ -249,17 +253,17 @@
             <div class="large-textbox">
                 <span>donate</span>
                 <p class="large">Join Us in Impacting Lives</p>
-                <img src="./img/icon/arrow-right-large.png" alt="">
+                <img src="./img/icon/arrow-right-large.svg" alt="">
             </div>
             <div class="footer-content">
                 <div class="row g-4 justify-content-between">
                     <div class="col-md-auto">
                         <p class="small mb-1">Get in touch</p>
-                        <p class="large getintouch-anchor"><a href="mailto:enforcers.communications@gmail.com"><img src="./img/icon/envelope.png" alt="envelope">enforcers.communications@gmail.com</a></p>
+                        <p class="large getintouch-anchor"><a href="mailto:enforcers.communications@gmail.com"><img src="./img/icon/envelope.svg" alt="envelope">enforcers.communications@gmail.com</a></p>
                         <p class="small mb-2">Follow us:</p>
                         <div class="social-icons">
-                            <a href="#"><img src="./img/icon/insta.png" alt=""></a>
-                            <a href="#"><img src="./img/icon/f.png" alt=""></a>
+                            <a href="#"><img src="./img/icon/insta.svg" alt=""></a>
+                            <a href="#"><img src="./img/icon/f.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-auto">
