@@ -2,8 +2,11 @@
     h1,span.large-text{
         font-size: 48px;
     }
-    p.large, h4{
+    h4{
         font-size: 20px;
+    }
+    p.large{
+        font-size: 18px;
     }
     .large-textbox {
         padding: 25px 45px;
@@ -16,6 +19,9 @@
     }
     .main-hero-details {
         padding: 40px 60px 40px 24px;
+    }
+    section.large-text-section span {
+        font-size: 100px;
     }
 
 }
@@ -88,9 +94,21 @@
     .main-hero-details {
         padding: 40px 24px;
     }
+    section.large-text-section span {
+        font-size: 60px;
+    }
 
 }
 @media screen and (max-width: 767px){
+    h1{
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 26px;
+    }
     a.transparent-btn, a.gradient-btn{
         min-width: 210px;
         justify-content: center;
@@ -117,9 +135,6 @@
     }
 
     /* Main Area Style */
-    h1{
-        font-size: 40px;
-    }
     .banner-btns {
         flex-direction: column;
     }
@@ -139,6 +154,15 @@
     a.event-schedule-anchor {
         position: inherit;
         right: inherit;
+    }
+    section.large-text-section span{
+        font-size: 48px;
+    }
+    section.large-text-section span:last-child{
+        text-align: start;
+    }
+    section.image-slider-section {
+        padding: 50px 0;
     }
 
 }

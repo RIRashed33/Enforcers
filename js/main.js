@@ -5,18 +5,23 @@
         if($('.home-image-slider')){
             $('.home-image-slider').owlCarousel({
                 loop:true,
-                margin:10,
                 autoWidth: true,
                 nav: false,
+                margin:24,
                 responsive:{
                     0:{
-                        items:1
+                        items:1,
+                        center: true,
                     },
-                    600:{
-                        items:3
+                    500:{
+                        items:2,
+                        center: false
+                    },
+                    768:{
+                        items: 3,
                     },
                     1000:{
-                        items:5
+                        items:4
                     }
                 }
             })
@@ -38,18 +43,19 @@
         if($('.about-carousel')){
             $('.about-carousel').owlCarousel({
                 loop:true,
-                autoWidth: true,
-                margin:10,
+                margin:32,
                 nav: false,
                 responsive:{
                     0:{
-                        items:1
+                        items:1,
+                        autoWidth: true
                     },
                     600:{
+                        autoWidth: true,
                         items:3
                     },
                     1000:{
-                        items:5
+                        items:4
                     }
                 }
             })
