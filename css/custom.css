@@ -18,7 +18,7 @@ body{
     line-height: 1.5;
     color: var(--semi-white);
  }
- a{
+ a, button{
     display: inline-block;
     text-decoration: none;
     -webkit-transition: all 0.4s;
@@ -103,6 +103,16 @@ a.right-arrow-btn {
 }
 a.right-arrow-btn:hover{
    background-position: right center;
+}
+span.vertical-radial-gradient {
+   width: 1px;
+   height: 120px;
+   background: radial-gradient(50% 50% at 50% 50%, #EFE1E1 0%, rgba(239, 225, 225, 0.00) 100%);
+}
+span.horizontal-radial-gradient {
+   width: 220px;
+   height: 2px;
+   background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%, rgba(217, 217, 217, 0.00) 100%);
 }
  
  /* Header Style */
@@ -287,4 +297,59 @@ ul.partnership-event-list li:not(li:last-child) {
    max-width: 550px;
    text-align: center;
    margin: 60px auto 0;
+}
+.charity-heading-content {
+   max-width: 900px;
+   text-align: center;
+   margin: 0 auto 50px;
+}
+.charity-details-content {
+   max-width: 960px;
+   padding: 32px 50px;
+   margin: 0 auto;
+}
+.charity-goal {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   gap: 24px;
+   margin-bottom: 24px;
+}
+.charities-list-content {
+   max-width: 840px;
+   margin: 0 auto;
+}
+.single-charities-item {
+   padding: 32px;
+   border-bottom: 1px solid var(--semi-white);
+}
+.single-charities-item > button {
+   background-color: transparent;
+   color: var(--semi-white);
+   text-align: start;
+   border: none;
+   padding: 0 30px 0 0;
+   display: block;
+   width: 100%;
+   background-image: url(../img/icon/angle-up.svg);
+   background-position: center right 6px;
+   background-repeat: no-repeat;
+   background-size: 12px;
+}
+.single-charities-item > button.collapsed{
+   background-image: url(../img/icon/angle-down.svg);
+}
+.impact-stories-content {
+   max-width: 1050px;
+   margin: 0 auto;
+}
+.impact-stories-img {
+   max-width: 450px;
+   padding: 24px;
+   border-radius: 24px;
+   background: var(--Dark-Gradient, linear-gradient(101deg, #1E1E1E 1.05%, #363636 100%));
+}
+.impact-stories-img img {
+   border-radius: 16px;
 }

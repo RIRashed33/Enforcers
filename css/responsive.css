@@ -99,11 +99,21 @@
     }
     section.enforcers-section {
         padding: 40px 0;
-     }
+    }
+    .charity-goal {
+        flex-direction: column;
+    }
+    .charity-details-content {
+        padding: 24px 0;
+    }
+    .single-charities-item {
+        padding: 16px;
+        border-bottom: 1px solid var(--semi-white);
+    }
 
 }
 @media screen and (max-width: 767px){
-    h1{
+    h1, span.large-text {
         font-size: 40px;
     }
     h2 {

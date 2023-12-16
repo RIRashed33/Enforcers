@@ -31,8 +31,35 @@
             })
         };
 
-        if($('.charity-slider')){
-            $('.charity-slider').owlCarousel({
+        if($('.charity-slider-1')){
+            $('.charity-slider-1').owlCarousel({
+                loop:true,
+                nav: false,
+                dots: false,
+                responsive : {
+                    0 : {
+                        items:1,
+                        autoplay: true,
+                        margin: 16
+                    },
+                    992 : {
+                        items: 1,
+                        stagePadding: 100,
+                        autoplay:false,
+                        margin: 36,
+                    },
+                    1200 : {
+                        items: 1,
+                        stagePadding: 200,
+                        autoplay:false,
+                        margin: 36,
+                    }
+                }
+            })
+        };
+
+        if($('.charity-slider-2')){
+            $('.charity-slider-2').owlCarousel({
                 loop:true,
                 nav: false,
                 dots: false,
