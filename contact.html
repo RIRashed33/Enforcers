@@ -18,27 +18,29 @@
     <header class="header-area py-3">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md-auto">
+                <div class="col-lg-auto">
                     <div class="responsive-header d-flex align-items-center justify-content-between">
                         <a href="#" class="logo">
                             <img src="./img/logo.png" alt="">
                         </a>
-                        <button onclick="navmenu_toggle()" class="menu-toggler-icon d-md-none">
+                        <button onclick="navmenu_toggle()" data-bs-target="#main_navmenu" data-bs-toggle="collapse" class="menu-toggler-icon d-lg-none">
                             <span></span>
                             <span></span>
                             <span></span>
                         </button>
                     </div>
                 </div>
-                <nav class="col-md-auto nav-menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Charities</a></li>
-                        <li><a href="#">Partnership</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="col-lg-auto navbar-expand-lg">
+                    <nav class="nav-menu collapse navbar-collapse" id="main_navmenu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">Team</a></li>
+                            <li><a href="./charity.html">Charities</a></li>
+                            <li><a href="./sponsorship.html">Partnership</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="col-md-auto d-none d-lg-block">
                     <div class="navmenu-extra-content">
                         <a href="#" class="transparent-btn me-3"><img src="./img/icon/shopping-cart.svg" alt="shop_cart_icon">Shop</a>
@@ -117,7 +119,7 @@
                 <div class="row g-4 justify-content-between">
                     <div class="col-md-auto">
                         <p class="small mb-1">Get in touch</p>
-                        <p class="large getintouch-anchor"><a href="mailto:enforcers.communications@gmail.com"><img src="./img/icon/envelope.svg" alt="envelope">enforcers.communications@gmail.com</a></p>
+                        <p class="large getintouch-anchor mb-4 pb-lg-1"><a href="mailto:enforcers.communications@gmail.com"><img src="./img/icon/envelope.svg" alt="envelope">enforcers.communications@gmail.com</a></p>
                         <p class="small mb-2">Follow us:</p>
                         <div class="social-icons">
                             <a href="#"><img src="./img/icon/insta.svg" alt=""></a>
@@ -127,11 +129,11 @@
                     <div class="col-md-auto">
                         <nav class="footer-navmenu">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Charities</a></li>
-                                <li><a href="#">Partnership</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">Team</a></li>
+                                <li><a href="./charity.html">Charities</a></li>
+                                <li><a href="./sponsorship.html">Partnership</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
