@@ -5,7 +5,7 @@
     h4{
         font-size: 20px;
     }
-    p.large{
+    p.large, ul.partnership-event-list{
         font-size: 18px;
     }
     .large-textbox {
@@ -97,6 +97,9 @@
     section.large-text-section span {
         font-size: 60px;
     }
+    section.enforcers-section {
+        padding: 40px 0;
+     }
 
 }
 @media screen and (max-width: 767px){
@@ -109,7 +112,7 @@
     h3 {
         font-size: 26px;
     }
-    a.transparent-btn, a.gradient-btn{
+    a.transparent-btn, a.gradient-btn, a.white-gradient-btn{
         min-width: 210px;
         justify-content: center;
     }
@@ -126,7 +129,6 @@
         margin-bottom: 45px;
     }
     p.getintouch-anchor {
-        margin-bottom: 24px;
         font-size: 16px;
     }
     p.getintouch-anchor a img {
@@ -164,6 +166,14 @@
     section.image-slider-section {
         padding: 50px 0;
     }
+    .charity-slider-item {
+        padding: 24px 20px;
+    }
+    .ch-slider-heading {
+        flex-direction: column-reverse;
+        align-items: start;
+        padding-top: 0;
+    }
 
 }
 @media screen and (max-width: 500px){
@@ -182,9 +192,6 @@
         margin-right: 25px;
     }
     /* Footer Style */
-    p.getintouch-anchor {
-        margin-bottom: 28px;
-    }
 
 }
 @media screen and (min-width: 1200px){

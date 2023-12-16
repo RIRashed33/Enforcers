@@ -7,21 +7,25 @@
                 loop:true,
                 autoWidth: true,
                 nav: false,
-                margin:24,
+                dots: false,
                 responsive:{
                     0:{
-                        items:1,
+                        items: 1,
                         center: true,
+                        autoplay:true,
+                        margin: 16
                     },
-                    500:{
-                        items:2,
-                        center: false
+                    480:{
+                        items: 2,
+                        center: false,
+                        autoplay:false,
+                        margin: 24,
                     },
-                    768:{
-                        items: 3,
-                    },
-                    1000:{
-                        items:4
+                    992:{
+                        items: 4,
+                        center: false,
+                        autoplay:false,
+                        margin: 32,
                     }
                 }
             })
@@ -30,11 +34,25 @@
         if($('.charity-slider')){
             $('.charity-slider').owlCarousel({
                 loop:true,
-                margin:10,
                 nav: false,
-                responsive:{
-                    0:{
-                        items:1
+                dots: false,
+                responsive : {
+                    0 : {
+                        items:1,
+                        autoplay: true,
+                        margin: 16
+                    },
+                    992 : {
+                        items: 1,
+                        stagePadding: 100,
+                        autoplay:false,
+                        margin: 36,
+                    },
+                    1200 : {
+                        items: 1,
+                        stagePadding: 200,
+                        autoplay:false,
+                        margin: 36,
                     }
                 }
             })

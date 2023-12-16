@@ -48,6 +48,7 @@ body{
  h3{
     font-size: 32px;
     line-height: 1.37;
+    margin-bottom: 0;
  }
  h4{
    font-size: 24px;
@@ -114,9 +115,6 @@ nav.nav-menu ul li a {
 }
 
 /* Footer Style */
-footer.footer-area {
-   padding: 60px 0;
-}
 .large-textbox {
    background: var(--dark-inner-gradient);
    display: flex;
@@ -164,9 +162,6 @@ span.large-text{
    font-weight: 600;
    line-height: 1.27;
    display: block;
-}
-section.main-hero-section {
-   padding: 60px 0;
 }
 .banner-btns {
    margin-bottom: 60px;
@@ -219,7 +214,7 @@ a.event-schedule-anchor {
 a.event-schedule-anchor:hover{
    background-position: right 8px center;
 }
-section.team-section {
+section.enforcers-section, footer.footer-area {
    padding: 60px 0;
 }
 .team-content {
@@ -253,4 +248,43 @@ section.large-text-section span:last-child{
 }
 section.image-slider-section {
    padding: 80px 0;
+}
+.charity-content {
+   max-width: 840px;
+   text-align: center;
+   margin: 0 auto 64px;
+}
+.charity-slider-item {
+   padding: 32px;
+   border: 2px solid #343434;
+   border-radius: 2px;
+}
+.ch-slider-heading {
+   border-bottom: 1px solid var(--semi-white);
+   margin-bottom: 32px;
+   padding: 16px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 16px;
+}
+.charity-slider .ch-slider-heading > img {
+   width: inherit;
+   display: inline-block;
+}
+.owl-carousel.charity-slider .owl-stage {
+   padding-left: 0 !important;
+}
+ul.partnership-event-list {
+   list-style-type: disc;
+   padding-left: 30px;
+   font-size: 23px;
+}
+ul.partnership-event-list li:not(li:last-child) {
+   margin-bottom: 8px;
+}
+.partnership-bottom-content {
+   max-width: 550px;
+   text-align: center;
+   margin: 60px auto 0;
 }
