@@ -23,6 +23,16 @@
     section.large-text-section span {
         font-size: 100px;
     }
+    .opportunities-title {
+        font-size: 14px;
+        min-width: 260px;
+    }
+    .opportunities-table-heading p.large {
+        font-size: 16px;
+    }
+    .enforcer-season, .blackout, .solute-service, .red-black, .help-hero {
+        min-width: 110px;
+     }
 
 }
 @media screen and (max-width: 991px){
@@ -109,6 +119,20 @@
     .single-charities-item {
         padding: 16px;
         border-bottom: 1px solid var(--semi-white);
+    }
+    .featured-partner-icons:not(.featured-partner-icons:last-child) {
+        margin-bottom: 24px;
+    }
+    .featured-partner-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .sponsorship-games {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .sponsorship-games span.vertical-rule {
+        display: none;
     }
 
 }
@@ -201,7 +225,13 @@
      nav.nav-menu ul li:not(li:last-child) {
         margin-right: 25px;
     }
-    /* Footer Style */
+    /* Main Area Style */
+    .featured-partner-icons:nth-child(even) {
+        justify-content: space-evenly;
+    }
+    .featured-partner-icons:nth-child(odd) {
+        justify-content: space-between;
+    }
 
 }
 @media screen and (min-width: 1200px){
