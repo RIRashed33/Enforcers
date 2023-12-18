@@ -452,3 +452,63 @@ ul.partnership-event-list li:not(li:last-child) {
    justify-content: center;
    text-align: center;
 }
+ul.about-tab-btn {
+   max-width: max-content;
+   margin: 0 auto 100px;
+   padding: 8px;
+   background-color: #181717;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+}
+ul.about-tab-btn li a {
+   color: var(--semi-white);
+   padding: 4px 16px;
+   border-radius: 4px;
+}
+ul.about-tab-btn li a.active, ul.about-tab-btn li a:hover {
+   background-color: var(--smoky-black);
+}
+.who-are-content {
+   text-align: center;
+   max-width: 840px;
+   margin: 0 auto 48px;
+}
+.why-play-image {
+   text-align: end;
+   background: var(--mix-gradient);
+   background-position: top 75px left;
+   background-size: 88%;
+}
+.goal-champ-boxs {
+   margin-top: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: stretch;
+   gap: 32px;
+}
+.single-goal-champ-item {
+   padding: 2px;
+   background: linear-gradient(101deg, #1E1E1E 1.05%, #363636 100%);
+}
+.our-goal-box, .npsfl-champ-box {
+   max-width: 410px;
+   padding: 32px;
+   text-align: center;
+   background: var(--dark-inner-gradient);
+   border-radius: 2px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: 100%;
+}
+.our-goal-box p, .npsfl-champ-box p {
+   margin-bottom: 0;
+}
+.our-goal-box {
+   gap: 16px;
+}
+.npsfl-champ-box{
+   gap: 32px;
+}

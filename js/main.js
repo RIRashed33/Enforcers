@@ -88,27 +88,31 @@
         if($('.about-carousel')){
             $('.about-carousel').owlCarousel({
                 loop:true,
-                margin:32,
+                autoWidth: true,
                 nav: false,
+                dots: false,
                 responsive:{
                     0:{
-                        items:1,
-                        autoWidth: true
+                        items: 1,
+                        center: true,
+                        autoplay:true,
+                        margin: 16
                     },
-                    600:{
-                        autoWidth: true,
-                        items:3
+                    480:{
+                        items: 2,
+                        center: false,
+                        autoplay:false,
+                        margin: 24,
                     },
-                    1000:{
-                        items:4
+                    992:{
+                        items: 4,
+                        center: false,
+                        autoplay:false,
+                        margin: 32,
                     }
                 }
             })
         };
-
-        
-
-
 
     });
 }(jQuery));
