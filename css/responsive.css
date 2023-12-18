@@ -5,8 +5,9 @@
     h4{
         font-size: 20px;
     }
-    p.large, ul.partnership-event-list{
+    p.large, ul.partnership-event-list {
         font-size: 18px;
+        line-height: 1.4;
     }
     .large-textbox {
         padding: 25px 45px;
@@ -32,6 +33,10 @@
     }
     .enforcer-season, .blackout, .solute-service, .red-black, .help-hero {
         min-width: 110px;
+    }
+    .single-history-year span {
+        font-size: 100px;
+        min-width: 260px;
     }
 
 }
@@ -96,6 +101,17 @@
     nav.nav-menu ul li:not(li:last-child) {
         margin-bottom: 12px;
     }
+    .large-textbox {
+        flex-direction: column;
+        padding: 25px 30px;
+    }
+    .large-textbox span {
+        margin-bottom: 16px;
+        font-size: 65px;
+    }
+    .large-textbox p.large {
+        margin-bottom: 45px;
+    }
 
     /* Main Area Style */
     .banner-btns {
@@ -143,8 +159,38 @@
         align-items: center;
         margin-top: 80px;
     }
-    ul.about-tab-btn {
-        margin: 0 auto 40px;
+    .who-are-content, .roster-item, .coaches-item {
+        padding-top: 16px;
+    }
+    .single-history-year {
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px 0;
+    }
+    .single-history-year span {
+        font-size: 80px;
+    }
+    .roster-list ul li span {
+        font-size: 18px;
+    }
+    .roster-list {
+        flex-direction: column;
+    }
+    .roster-list ul {
+        width: 100%;
+    }
+    ul.roster-right-list li:nth-child(even) {
+        background-color: transparent;
+    }
+    ul.roster-right-list li:nth-child(odd) {
+        background-color: #1E1E1E;
+    }
+    .roster-thumb-box {
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+    .single-coach {
+        padding: 16px 16px 24px;
     }
 
 }
@@ -163,17 +209,6 @@
         justify-content: center;
     }
     /* Footer Style */
-    .large-textbox {
-        flex-direction: column;
-        padding: 25px 30px;
-    }
-    .large-textbox span {
-        margin-bottom: 16px;
-        font-size: 65px;
-    }
-    .large-textbox p.large {
-        margin-bottom: 45px;
-    }
     p.getintouch-anchor {
         font-size: 16px;
     }
