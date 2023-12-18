@@ -134,6 +134,10 @@
     .sponsorship-games span.vertical-rule {
         display: none;
     }
+    .official-sponsor-content {
+        padding: 48px 16px;
+        min-height: 100%;
+    }
 
 }
 @media screen and (max-width: 767px){
@@ -168,6 +172,10 @@
     p.getintouch-anchor a img {
         max-width: 16px;
         margin-right: 8px
+    }
+    .official-sponsor-outer-box {
+        padding: 16px;
+        border-radius: 16px;
     }
 
     /* Main Area Style */

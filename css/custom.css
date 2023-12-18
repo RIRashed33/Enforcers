@@ -435,3 +435,20 @@ ul.partnership-event-list li:not(li:last-child) {
 .opportunities-table-row:nth-child(even) > * {
    background-color: #181717;
 }
+.official-sponsor-outer-box {
+   border-radius: 24px;
+   background: var(--Dark-Gradient, linear-gradient(101deg, #1E1E1E 1.05%, #363636 100%));
+   padding: 24px;
+}
+.official-sponsor-content {
+   padding: 64px;
+   min-height: 640px;
+   background-image: url(../img/official-sponsor-bg.png);
+   background-size: cover;
+   border-radius: 16px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
