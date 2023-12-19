@@ -38,6 +38,10 @@
         font-size: 100px;
         min-width: 260px;
     }
+    .live-schedule-box {
+        flex-direction: column;
+        align-items: start;
+    }
 
 }
 @media screen and (max-width: 991px){
@@ -191,6 +195,24 @@
     }
     .single-coach {
         padding: 16px 16px 24px;
+    }
+    .live-schedule-box {
+        align-items: center;
+    }
+    .contact-form {
+        margin-right: auto;
+    }
+    .contact-content {
+        text-align: center;
+    }
+    .contact-content p.large {
+        margin: 0 auto;
+     }
+    .contact-form {
+        padding: 16px;
+    }
+    .form-input-conatiner input, .form-input-conatiner textarea {
+        padding: 8px 16px;
     }
 
 }

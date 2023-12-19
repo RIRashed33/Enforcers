@@ -5,8 +5,8 @@
     --semi-white: #EFE1E1;
     --smoky-black: #111010;
     --maroon: #7D0B0B;
-    --conic-gradient: conic-gradient(from 135deg at 49.73% 50%, #7D0B0B 0deg, #540707 360deg);
-    --white-conic: conic-gradient(from 135deg at 50% 50%, #FFF 0deg, #C2B2B2 360deg);
+    --conic-gradient: conic-gradient(from 110deg at 49.73% 50%, #7D0B0B 0deg, #540707 360deg);
+    --white-conic: conic-gradient(from 110deg at 50% 50%, #FFF 0deg, #C2B2B2 360deg);
     --dark-inner-gradient: linear-gradient(142deg, #111010 0%, #1F1D1D 64.92%);
     --mix-gradient: var(--Mix-Gradient, linear-gradient(to bottom right, #350606 0%, #3E0B0B 9%, #150D0D 26%, #0C0404 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #350606 0%, #3E0B0B 9%, #150D0D 26%, #0C0404 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #350606 0%, #3E0B0B 9%, #150D0D 26%, #0C0404 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #350606 0%, #3E0B0B 9%, #150D0D 26%, #0C0404 50%) top right / 50% 50% no-repeat);
 }
@@ -586,4 +586,61 @@ ul.roster-left-list li:nth-child(even), ul.roster-right-list li:nth-child(even) 
    background-position: top left;
    background-size: 100%;
    border-radius: 16px;
+}
+.live-schedule-box {
+   display: flex;
+   gap: 24px;
+   align-items: stretch;
+   text-align: start;
+}
+.single-ls-box {
+   background: var(--dark-inner-gradient);
+   border-radius: 2px;
+   padding: 24px;
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   min-width: 310px;
+}
+.contact-form {
+   max-width: 520px;
+   padding: 24px;
+   border-radius: 4px;
+   border: 1px solid var(--White, #EFE1E1);
+   background: var(--smoky-black);
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   align-items: flex-start;
+   margin-left: auto;
+}
+.form-input-conatiner > * {
+   width: 100%;
+}
+.form-input-conatiner label {
+   padding: 8px 16px;
+}
+.form-input-conatiner input, .form-input-conatiner textarea {
+   padding: 16px;
+   border-radius: 2px;
+   border: 1px solid var(--semi-white);
+   background: transparent;
+   color: var(--semi-white);
+   margin-bottom: 8px;
+}
+.form-input-conatiner textarea {
+   height: 90px;
+   margin-bottom: 0;
+}
+.contact-form input[type="submit"].gradient-submit-btn {
+   padding: 12px 24px;
+   border: none;
+   background: var(--white-conic);
+   color: var(--smoky-black);
+   line-height: 20px;
+   font-weight: 600;
+   border-radius: 2px;
+}
+.contact-content p.large {
+   max-width: 510px;
 }
