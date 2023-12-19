@@ -39,8 +39,14 @@
         min-width: 260px;
     }
     .live-schedule-box {
-        flex-direction: column;
-        align-items: start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                    -ms-grid-row-align: start;
+                align-items: start;
     }
 
 }
@@ -58,9 +64,16 @@
         width: 35px;
         background: transparent;
         height: 28px;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 3px 0;
         position: relative;
         z-index: 9;
@@ -72,18 +85,21 @@
         height: 3px;
         background-color: var(--semi-white);
         border-radius: 2px;
+        -webkit-transition: all 0.4s;
         transition: all 0.4s;
         position: relative;
     }
     body.show-menu button.menu-toggler-icon span:first-child{
-        transform: rotate(48deg);
+        -webkit-transform: rotate(48deg);
+                transform: rotate(48deg);
         top: 9px;
     }
     body.show-menu button.menu-toggler-icon span:nth-child(2){
         opacity: 0;
     }
     body.show-menu button.menu-toggler-icon span:last-child{
-        transform: rotate(-48deg);
+        -webkit-transform: rotate(-48deg);
+                transform: rotate(-48deg);
         bottom: 10px;
     }
     nav.nav-menu {
@@ -92,6 +108,7 @@
         top: 0;
         background-color: var(--maroon);
         width: 100%;
+        -webkit-transition: all 0.4s;
         transition: all 0.4s;
     }
     nav.nav-menu ul {
@@ -106,7 +123,10 @@
         margin-bottom: 12px;
     }
     .large-textbox {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding: 25px 30px;
     }
     .large-textbox span {
@@ -119,7 +139,9 @@
 
     /* Main Area Style */
     .banner-btns {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .main-hero-details {
         padding: 40px 24px;
@@ -131,7 +153,10 @@
         padding: 40px 0;
     }
     .charity-goal {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .charity-details-content {
         padding: 24px 0;
@@ -144,11 +169,17 @@
         margin-bottom: 24px;
     }
     .featured-partner-icons {
-        justify-content: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .sponsorship-games {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 32px;
     }
     .sponsorship-games span.vertical-rule {
@@ -159,15 +190,24 @@
         min-height: 100%;
     }
     .goal-champ-boxs {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
         margin-top: 80px;
     }
     .who-are-content, .roster-item, .coaches-item {
         padding-top: 16px;
     }
     .single-history-year {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 24px;
         padding: 32px 0;
     }
@@ -178,7 +218,10 @@
         font-size: 18px;
     }
     .roster-list {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .roster-list ul {
         width: 100%;
@@ -197,7 +240,10 @@
         padding: 16px 16px 24px;
     }
     .live-schedule-box {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
     }
     .contact-form {
         margin-right: auto;
@@ -228,7 +274,9 @@
     }
     a.transparent-btn, a.gradient-btn, a.white-gradient-btn{
         min-width: 210px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     /* Footer Style */
     p.getintouch-anchor {
@@ -245,11 +293,20 @@
 
     /* Main Area Style */
     .banner-btns {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .event-schedule-box {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
         text-align: center;
         gap: 16px;
         padding: 24px;
@@ -277,8 +334,14 @@
         padding: 24px 20px;
     }
     .ch-slider-heading {
-        flex-direction: column-reverse;
-        align-items: start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                    -ms-grid-row-align: start;
+                align-items: start;
         padding-top: 0;
     }
     .our-goal-box, .npsfl-champ-box {
@@ -304,10 +367,14 @@
     }
     /* Main Area Style */
     .featured-partner-icons:nth-child(even) {
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
     }
     .featured-partner-icons:nth-child(odd) {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .our-goal-box > p.large {
         font-size: 23px;
